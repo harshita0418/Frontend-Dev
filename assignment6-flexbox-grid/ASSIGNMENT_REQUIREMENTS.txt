@@ -1,0 +1,100 @@
+ASSIGNMENT 6 - DETAILED REQUIREMENTS
+=====================================
+
+QUESTION 1: Personal Portfolio with Flexbox ✅ COMPLETED
+--------------------------------------------------------
+✓ Header with name (left) and nav links (right)
+✓ Main area: "About Me" and image side-by-side
+✓ Footer with centered copyright text
+✓ display: flex for horizontal alignment
+✓ Responsive: stack vertically below 700px
+✓ Center items with align-items and justify-content
+
+
+QUESTION 2: 4-Column Product Gallery with Grid
+-----------------------------------------------
+□ Grid of 8 product cards
+□ Each card: product name and price
+□ grid-template-columns: repeat(4, 1fr) on desktop
+□ 2 columns on tablets, 1 column on mobile
+□ Hover: transform: scale(1.05) with transition: 0.3s
+□ Equal height cards
+
+
+QUESTION 3: 3-Section Homepage with Flexbox
+--------------------------------------------
+□ Header with nav links (justify-content: space-around)
+□ Main: Services, Projects, Contact boxes horizontally
+□ Hover: transform: rotate(2deg)
+□ Footer at bottom, full width
+□ Balanced layout at all screen sizes
+
+
+QUESTION 4: Dashboard Layout with Grid
+---------------------------------------
+□ Header spans top across all columns
+□ Sidebar on left with vertical navigation
+□ Main content: 4 boxes in 2x2 grid
+□ One box spans two columns (grid-column: span 2)
+□ Use grid-gap and fractional units (fr)
+□ Hover: scale up with shadow
+
+
+QUESTION 5: Pricing Section with Flexbox
+-----------------------------------------
+□ Three pricing cards horizontally aligned
+□ Middle card larger with different background
+□ Hover: transform: translateY(-10px) with smooth transition
+□ Fade-in animation using @keyframes on page load
+□ Stack vertically below 750px
+
+
+QUESTION 6: Responsive Blog Layout with Grid
+---------------------------------------------
+□ Header with title and nav links
+□ Sidebar on left with categories
+□ Main content: two blog posts side-by-side
+□ Footer with contact info
+□ Use grid-template-areas
+□ Below 800px: sidebar moves below main content
+□ Proper padding, margins, and gap
+
+
+QUESTION 7: CSS Loading Animation
+----------------------------------
+□ Three small circles moving up and down
+□ Use @keyframes for motion and timing
+□ Each circle starts with slight delay
+□ Center animation using Flexbox
+□ Use transform: translateY()
+□ animation-iteration-count: infinite
+
+
+QUESTION 8: Photo Gallery with Grid
+------------------------------------
+□ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+□ Images fill grid cells, scale up on hover
+□ transition: transform 0.5s ease
+□ Include <figcaption> below each image
+□ Auto-adjust to screen size
+
+
+QUESTION 9: Card Flip Animation
+--------------------------------
+□ One card flips 180° on hover
+□ Front: title and image
+□ Back: text description
+□ transform-style: preserve-3d
+□ perspective: 1000px
+□ transform: rotateY(180deg) with smooth transitions
+□ Card centered using Flexbox
+
+
+QUESTION 10: Combined Flexbox and Grid Layout
+----------------------------------------------
+□ Header: logo and nav (Flexbox)
+□ Main: 2-column Grid (Article + Sidebar)
+□ Footer: full width, centered text
+□ Inside article: three boxes using Flexbox
+□ @keyframes animation (fade in or move up)
+□ Single column on mobile screens
