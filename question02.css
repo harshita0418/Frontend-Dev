@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Flexbox for centering boxes vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* Base box styling */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.box p {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Box 1 - Fixed pixel units */
+.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: #e3f2fd; /* Light blue */
+}
+
+/* Box 2 - Percentage width with min-height */
+.box2 {
+    width: 40%; /* Percentage of parent container */
+    min-height: 300px; /* Minimum height, will grow if content is larger */
+    background-color: #f3e5f5; /* Light purple */
+    max-width: 500px; /* Won't exceed this width */
+}
+
+/* Box 3 - Viewport height with max-width and overflow */
+.box3 {
+    height: 50vh; /* 50% of viewport height */
+    max-width: 350px; /* Maximum width constraint */
+    background-color: #e8f5e9; /* Light green */
+    overflow: auto; /* Enables scrolling if content exceeds container */
+}
+
+.overflow-demo {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto; /* Vertical scroll for overflow content */
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .box2 {
+        width: 90%;
+    }
+    
+    .box3 {
+        height: 400px;
+    }
+}

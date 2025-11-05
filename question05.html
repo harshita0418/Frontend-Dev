@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors Demo</title>
+    <link rel="stylesheet" href="question05.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Selectors Demonstration</h1>
+    </header>
+
+    <main>
+        <section class="selectors-demo">
+            <h2>Attribute Selectors</h2>
+            <form>
+                <input type="text" placeholder="Text input (type='text')">
+                <input type="email" placeholder="Email input (type='email')">
+                <input type="password" placeholder="Password input">
+            </form>
+
+            <h2>Link Selectors</h2>
+            <ul class="links">
+                <li><a href="https://www.example.com">HTTPS Link</a></li>
+                <li><a href="http://www.example.com">HTTP Link</a></li>
+                <li><a href="/local">Local Link</a></li>
+            </ul>
+
+            <h2>Pseudo-classes</h2>
+            <ul class="items">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+                <li>Fifth item</li>
+            </ul>
+
+            <h2>Combinators</h2>
+            <div class="parent">
+                <p>Direct child paragraph</p>
+                <div class="child">
+                    <p>Nested paragraph (descendant)</p>
+                </div>
+            </div>
+            
+            <p class="adjacent">Adjacent sibling paragraph</p>
+            <p class="general">General sibling paragraph</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Selectors Demo</p>
+    </footer>
+</body>
+</html>

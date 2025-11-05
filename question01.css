@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Flexbox layout for boxes - aligned horizontally */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    flex: 1;
+}
+
+/* Base box styling with different padding values */
+.box {
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem; /* Internal spacing demonstration */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.box h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.box p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Different border styles */
+.solid {
+    border: 4px solid #3498db;
+}
+
+.dashed {
+    border: 4px dashed #e74c3c;
+    padding: 1.5rem; /* Different padding */
+}
+
+.double {
+    border: 6px double #2ecc71;
+    padding: 2.5rem; /* Different padding */
+}
+
+.groove {
+    border: 6px groove #f39c12;
+}
+
+/* Rounded corners demonstration */
+.rounded {
+    border: 4px solid #9b59b6;
+    border-radius: 20px;
+}
+
+.circle {
+    border: 4px solid #1abc9c;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* Hover effect - changes border color with transition */
+.box:hover {
+    border-color: #e91e63;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 90%;
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    /* Text shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Flexbox layout - cards in a single row */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* Base card styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 320px;
+    text-align: center;
+    /* CSS transition for smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    /* Text shadow for depth on headings */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Different box-shadow styles for each card */
+.card1 {
+    /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card2 {
+    /* Medium shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card3 {
+    /* Strong shadow */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect - card lifts up with larger shadow */
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card1:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card2:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card3:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive - Grid layout on smaller screens */
+@media (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
