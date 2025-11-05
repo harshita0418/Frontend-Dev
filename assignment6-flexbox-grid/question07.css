@@ -1,72 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loading-container {
-    text-align: center;
-    color: white;
-}
-
-.loading-container h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Flexbox to center the loader */
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-/* Circle styling */
-.circle {
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    animation: bounce 1.4s infinite ease-in-out;
-}
-
-/* Animation delays for each circle */
-.circle1 {
-    animation-delay: 0s;
-}
-
-.circle2 {
-    animation-delay: 0.2s;
-}
-
-.circle3 {
-    animation-delay: 0.4s;
-}
-
-/* Bounce animation using translateY */
-@keyframes bounce {
-    0%, 80%, 100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    40% {
-        transform: translateY(-30px);
-        opacity: 0.7;
-    }
-}
-
-.loading-container p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+.container { text-align: center; color: white; }
+h2 { font-size: 2rem; margin-bottom: 2rem; }
+.loader { display: flex; justify-content: center; align-items: center; gap: 1rem; }
+.circle { width: 20px; height: 20px; background: white; border-radius: 50%; animation: bounce 1.4s infinite ease-in-out; }
+.circle:nth-child(1) { animation-delay: 0s; }
+.circle:nth-child(2) { animation-delay: 0.2s; }
+.circle:nth-child(3) { animation-delay: 0.4s; }
+@keyframes bounce { 0%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-30px); } }

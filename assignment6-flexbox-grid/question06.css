@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.blog { display: grid; grid-template-columns: 300px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas: "header header" "sidebar main" "footer footer"; min-height: 100vh; gap: 2rem; padding: 2rem; }
+header { grid-area: header; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 2rem; border-radius: 15px; }
+header nav { display: flex; gap: 2rem; margin-top: 1rem; }
+header a { color: white; text-decoration: none; }
+aside { grid-area: sidebar; background: white; padding: 2rem; border-radius: 15px; }
+aside ul { list-style: none; margin-top: 1rem; }
+aside li { padding: 0.5rem 0; color: #666; }
+main { grid-area: main; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+article { background: white; padding: 2rem; border-radius: 15px; }
+article h2 { color: #667eea; margin-bottom: 1rem; }
+footer { grid-area: footer; background: #2c3e50; color: white; text-align: center; padding: 2rem; border-radius: 15px; }
+@media (max-width: 800px) { .blog { grid-template-columns: 1fr; grid-template-areas: "header" "main" "sidebar" "footer"; } main { grid-template-columns: 1fr; } }
