@@ -1,0 +1,140 @@
+/* Q5: Filter Cards with Animation */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+header {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Flexbox container */
+.cards-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Profile cards */
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Fade-in animation on page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.profile-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.profile-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Profile image with filters */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    transition: filter 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-image.grayscale {
+    filter: grayscale(100%);
+}
+
+.profile-image.sepia {
+    filter: sepia(100%);
+}
+
+/* On hover: remove filter and lift card */
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card:hover .profile-image {
+    filter: none;
+}
+
+.profile-card h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.profile-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Stack vertically below 800px */
+@media (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

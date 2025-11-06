@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Responsive Typography</title>
+    <link rel="stylesheet" href="question-04-responsive-typography.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Typography Guide</h1>
+    </header>
+
+    <main>
+        <section class="typography-section">
+            <h1>Scaling Headlines with Clamp()</h1>
+            <p>This heading and paragraph use the CSS clamp() function to automatically scale their font sizes based on the viewport width. The clamp() function takes three parameters: minimum size, preferred size, and maximum size. This creates fluid typography that responds perfectly to any screen size.</p>
+            
+            <h2>Why Clamp() Matters</h2>
+            <p>Traditional responsive design requires multiple media queries to adjust font sizes. With clamp(), you can achieve smooth scaling with a single CSS rule. The heading scales between 1.5rem and 3rem, while the paragraph scales between 1rem and 1.5rem, always maintaining perfect proportions.</p>
+            
+            <h2>Benefits of Responsive Typography</h2>
+            <p>Responsive typography improves readability across all devices. Large headings on desktop are automatically reduced on mobile, while maintaining proper hierarchy. Line height and spacing adjust automatically for optimal readability. This approach eliminates the need for multiple media queries and creates a seamless experience.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Responsive Typography. All rights reserved.</p>
+    </footer>
+</body>
+</html>

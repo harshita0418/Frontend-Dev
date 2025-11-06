@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Responsive Dashboard Summary</title>
+    <link rel="stylesheet" href="question-10-responsive-dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Responsive Dashboard</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#filters">Filters</a>
+                <a href="#typography">Typography</a>
+                <a href="#queries">Media Queries</a>
+                <a href="#cheatsheet">Cheatsheet</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="cards-grid">
+                <article class="dashboard-card" id="filters">
+                    <h2>CSS Filters</h2>
+                    <p>Apply visual effects like blur, grayscale, and brightness. Example: filter: blur(5px);</p>
+                </article>
+
+                <article class="dashboard-card" id="typography">
+                    <h2>Responsive Typography</h2>
+                    <p>Scale fonts fluidly with clamp(). Example: font-size: clamp(1rem, 2vw, 1.5rem);</p>
+                </article>
+
+                <article class="dashboard-card" id="queries">
+                    <h2>Media Queries</h2>
+                    <p>Adapt styles to screen sizes. Example: @media (max-width: 600px) { }</p>
+                </article>
+
+                <article class="dashboard-card" id="cheatsheet">
+                    <h2>Quick Reference</h2>
+                    <p>Combine Flexbox, Grid, filters, and media queries for responsive design.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer class="dashboard-footer">
+        <p>&copy; 2025 Responsive Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

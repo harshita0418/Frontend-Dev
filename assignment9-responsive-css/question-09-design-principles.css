@@ -1,0 +1,111 @@
+/* Q9: Responsive Design Principles Summary */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* CSS Grid for principles */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.principle-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.principle-box h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.principle-box p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.principle-box code {
+    background-color: #f5f5f5;
+    color: #d63384;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    display: block;
+}
+
+/* Hover effect: gradient background and text color change */
+.principle-box:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.principle-box:hover h2,
+.principle-box:hover p {
+    color: white;
+}
+
+.principle-box:hover code {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Single column below 600px */
+@media (max-width: 600px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+
+    main {
+        margin: 1.5rem auto;
+    }
+}

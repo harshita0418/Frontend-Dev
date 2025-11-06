@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 - Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="question-09-design-principles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Principles</h1>
+    </header>
+
+    <main>
+        <section class="principles-grid">
+            <article class="principle-box">
+                <h2>Fluid Layouts</h2>
+                <p>Use percentages and flexible units instead of fixed pixels. This allows content to adapt smoothly to any screen size.</p>
+                <code>width: 100%; max-width: 1200px;</code>
+            </article>
+
+            <article class="principle-box">
+                <h2>Flexible Media</h2>
+                <p>Ensure images, videos, and other media scale proportionally. Use max-width to prevent overflow on smaller screens.</p>
+                <code>img { max-width: 100%; height: auto; }</code>
+            </article>
+
+            <article class="principle-box">
+                <h2>Breakpoints</h2>
+                <p>Define specific screen widths where layout changes. Common breakpoints are 600px, 900px, and 1200px.</p>
+                <code>@media (max-width: 600px) { }</code>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Responsive Design Principles. All rights reserved.</p>
+    </footer>
+</body>
+</html>

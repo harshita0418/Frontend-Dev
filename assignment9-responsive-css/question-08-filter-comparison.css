@@ -1,0 +1,124 @@
+/* Q8: Filter Comparison Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.comparison-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Side-by-side layout with Flexbox */
+.comparison-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.comparison-item {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.comparison-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+/* Original image - no filter */
+.original-image {
+    filter: none;
+}
+
+/* Filtered image */
+.filtered-image {
+    filter: brightness(0.7) contrast(1.2);
+}
+
+/* On hover, remove filter */
+.comparison-item:hover .filtered-image {
+    filter: none;
+}
+
+figcaption {
+    margin-top: 1rem;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.info-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Stack vertically below 700px */
+@media (max-width: 700px) {
+    .comparison-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .comparison-item {
+        min-width: 100%;
+    }
+
+    .comparison-section,
+    .info-section {
+        padding: 1.5rem;
+    }
+
+    main {
+        margin: 1rem auto;
+    }
+}
