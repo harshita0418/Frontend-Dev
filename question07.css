@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styling with different font properties */
+article p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    letter-spacing: 0.3px;
+}
+
+/* First paragraph with different styling */
+.intro {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #555;
+    line-height: 2;
+}
+
+/* Pseudo-element: ::first-letter - Large first letter */
+article p::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #667eea;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* Pseudo-element: ::first-line - Bold first line */
+article p::first-line {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Custom styling for strong element */
+strong {
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+/* Custom styling for em element */
+em {
+    color: #3498db;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Custom styling for mark element */
+mark {
+    background-color: #f39c12;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    article h2 {
+        font-size: 2rem;
+    }
+    
+    article p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .intro {
+        font-size: 1.1rem;
+    }
+    
+    main {
+        padding: 2rem;
+        margin: 2rem 1rem;
+    }
+}

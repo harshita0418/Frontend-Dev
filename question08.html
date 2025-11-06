@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="question08.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box Model Demonstration</h1>
+        <p>Understanding Content, Padding, Border, and Margin</p>
+    </header>
+
+    <main>
+        <section class="box-model-demo">
+            <h2>Default Box Model</h2>
+            <div class="box default-box">
+                <div class="margin-layer">
+                    <span class="layer-label">Margin (Orange)</span>
+                    <div class="border-layer">
+                        <span class="layer-label">Border (Blue)</span>
+                        <div class="padding-layer">
+                            <span class="layer-label">Padding (Green)</span>
+                            <div class="content-layer">
+                                <p>Content Area</p>
+                                <p>Width: 300px</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="description">In the default box model, width and height only apply to the content area. Padding and border are added to the total size.</p>
+        </section>
+
+        <section class="box-model-demo">
+            <h2>Box-Sizing: Border-Box</h2>
+            <div class="box border-box">
+                <div class="margin-layer">
+                    <span class="layer-label">Margin (Orange)</span>
+                    <div class="border-layer">
+                        <span class="layer-label">Border (Blue)</span>
+                        <div class="padding-layer">
+                            <span class="layer-label">Padding (Green)</span>
+                            <div class="content-layer">
+                                <p>Content Area</p>
+                                <p>Width: 300px (total)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="description">With box-sizing: border-box, width includes content, padding, and border. This makes sizing more predictable.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Box Model Demo</p>
+    </footer>
+</body>
+</html>

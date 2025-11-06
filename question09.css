@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 3rem 2rem;
+}
+
+/* Form styling */
+.demo-form {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Input and textarea base styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    /* Default outline style */
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+/* Demonstration of different outline styles on different inputs */
+.form-group:nth-child(1) input {
+    outline-style: solid;
+}
+
+.form-group:nth-child(2) input {
+    outline-style: dashed;
+}
+
+.form-group:nth-child(3) input {
+    outline-style: dotted;
+}
+
+.form-group:nth-child(4) textarea {
+    outline-style: double;
+    resize: vertical;
+}
+
+/* Focus state with outline color change */
+.form-group input:focus {
+    border-color: #667eea;
+    outline-color: #667eea;
+    outline-width: 3px;
+    outline-offset: 4px;
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.2);
+}
+
+.form-group textarea:focus {
+    border-color: #764ba2;
+    outline-color: #764ba2;
+    outline-width: 3px;
+    outline-offset: 4px;
+    box-shadow: 0 0 15px rgba(118, 75, 162, 0.2);
+}
+
+/* Submit button styling */
+button {
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+button:focus {
+    outline-color: #f39c12;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-offset: 4px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .demo-form {
+        padding: 2rem 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
