@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Personal Portfolio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="question-02-personal-portfolio.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-light py-5">
+        <div class="container text-center">
+            <!-- Profile Image using Bootstrap utilities: img-fluid (responsive), rounded-circle (circular) -->
+            <img src="https://via.placeholder.com/200/667eea/ffffff?text=Your+Photo" alt="Profile Picture" class="img-fluid rounded-circle mb-4" style="width: 200px; height: 200px;">
+            
+            <!-- Name and Tagline using text utilities: fw-bold (font-weight), text-center -->
+            <h1 class="fw-bold mb-2">John Developer</h1>
+            <p class="lead text-muted mb-4">Full Stack Developer | Web Designer | Problem Solver</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- Using container and text-center for alignment -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">About Me</h2>
+                        <p class="mb-4">I'm a passionate developer with 5+ years of experience building web applications. I specialize in creating responsive, user-friendly digital experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <!-- Bootstrap buttons with different styles -->
+                    <a href="#" class="btn btn-primary btn-lg me-3">Hire Me</a>
+                    <a href="#" class="btn btn-outline-secondary btn-lg">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="text-center mb-4">Contact Me</h2>
+                        <!-- Bootstrap form utilities: form-control (styling), form-group (spacing) -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 John Developer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

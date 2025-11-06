@@ -1,0 +1,32 @@
+/* Q4: Restaurant Menu Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Table styling */
+.table {
+    font-size: 0.95rem;
+}
+
+/* List group styling */
+.list-group-item {
+    border-left: 4px solid #667eea;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}

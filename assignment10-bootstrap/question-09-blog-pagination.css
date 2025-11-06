@@ -1,0 +1,44 @@
+/* Q9: Blog Pagination */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Blog post styling */
+article a {
+    color: #667eea;
+    transition: color 0.3s ease;
+}
+
+article a:hover {
+    color: #764ba2;
+}
+
+/* Pagination styling */
+.pagination .page-link {
+    color: #667eea;
+    border-color: #e0e0e0;
+}
+
+.pagination .page-link:hover {
+    color: #764ba2;
+    background-color: #f8f9fa;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #667eea;
+    border-color: #667eea;
+}

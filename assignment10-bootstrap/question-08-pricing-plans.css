@@ -1,0 +1,43 @@
+/* Q8: Pricing Plans */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Pricing card styling */
+.pricing-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.pricing-card:hover:not(.pricing-card-pro) {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.pricing-card-pro {
+    border: 2px solid #667eea;
+}
+
+.pricing-card-pro:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 16px 32px rgba(102, 126, 234, 0.4) !important;
+}
+
+header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
