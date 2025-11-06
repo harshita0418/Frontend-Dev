@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Flexbox to distribute examples evenly */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* Base button styling */
+.effect-btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    /* Smooth transitions */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button 1: Grow and change color with shadow */
+.btn1 {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.btn1:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #fa709a, #fee140);
+    box-shadow: 0 10px 30px rgba(240, 147, 251, 0.5);
+}
+
+.btn1:active {
+    transform: scale(1.05);
+}
+
+/* Button 2: Scale with color change */
+.btn2 {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.btn2:hover {
+    transform: scale(1.2) translateY(-5px);
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    box-shadow: 0 15px 35px rgba(79, 172, 254, 0.5);
+}
+
+/* Button 3: Rotate and change color */
+.btn3 {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+.btn3:hover {
+    transform: rotate(10deg) scale(1.1);
+    background: linear-gradient(135deg, #30cfd0, #330867);
+    box-shadow: 0 10px 30px rgba(250, 112, 154, 0.5);
+}
+
+/* Button 4: Glow effect with scale */
+.btn4 {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+}
+
+.btn4:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    box-shadow: 0 0 30px rgba(255, 154, 158, 0.8),
+                0 0 60px rgba(254, 207, 239, 0.6);
+}
+
+/* Focus effect */
+.effect-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .effect-btn {
+        width: 80%;
+        max-width: 300px;
+    }
+}
