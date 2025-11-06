@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="question08.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison Page</h1>
+        <p>Understanding content-box vs border-box</p>
+    </header>
+
+    <main>
+        <div class="comparison-container">
+            <div class="box-wrapper">
+                <div class="box content-box">
+                    <h3>content-box (default)</h3>
+                    <p>Width: 300px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                    <p class="total">Total width: 350px</p>
+                </div>
+                <p class="description">
+                    With <strong>box-sizing: content-box</strong> (default), 
+                    padding and border are added to the specified width. 
+                    Total width = width + padding + border.
+                </p>
+            </div>
+
+            <div class="box-wrapper">
+                <div class="box border-box">
+                    <h3>border-box</h3>
+                    <p>Width: 300px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                    <p class="total">Total width: 300px</p>
+                </div>
+                <p class="description">
+                    With <strong>box-sizing: border-box</strong>, 
+                    padding and border are included within the specified width. 
+                    Total width = width (includes padding and border).
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Box-Sizing Demo</p>
+    </footer>
+</body>
+</html>

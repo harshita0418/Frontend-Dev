@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Center animations vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 4rem 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.label {
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Moving Box Animation - translateX */
+.moving-box {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    border-radius: 10px;
+    animation: moveBox 2s ease-in-out infinite;
+}
+
+@keyframes moveBox {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+/* Bouncing Ball Animation - translateY */
+.bouncing-ball {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-radius: 50%;
+    /* animation with delay, iteration count, and direction */
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-80px);
+    }
+}
+
+/* Color Changing Box */
+.color-change {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    animation: colorChange 3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(135deg, #fa709a, #fee140);
+        transform: rotate(0deg);
+    }
+    33% {
+        background: linear-gradient(135deg, #30cfd0, #330867);
+        transform: rotate(120deg);
+    }
+    66% {
+        background: linear-gradient(135deg, #a8edea, #fed6e3);
+        transform: rotate(240deg);
+    }
+    100% {
+        background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

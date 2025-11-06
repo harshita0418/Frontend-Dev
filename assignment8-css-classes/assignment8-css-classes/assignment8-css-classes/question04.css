@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.content {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content > h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.selector-demo {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.selector-demo h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Element Selector - targets all p elements */
+p {
+    color: #555;
+    padding: 0.5rem 0;
+}
+
+/* Class Selector - targets elements with class="highlight" */
+.highlight {
+    background-color: #fff3cd;
+    padding: 1rem;
+    border-left: 4px solid #ffc107;
+    color: #856404;
+}
+
+/* ID Selector - targets element with id="unique" */
+#unique {
+    background-color: #d4edda;
+    padding: 1rem;
+    border-left: 4px solid #28a745;
+    color: #155724;
+}
+
+/* Attribute Selector - targets links starting with https */
+a[href^="https"] {
+    color: #27ae60;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #e8f8f5;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Attribute Selector - targets email input types */
+input[type="email"] {
+    padding: 0.8rem;
+    border: 2px solid #9b59b6;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+/* Child Combinator (>) - selects only direct children */
+.parent > p {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    border-left: 4px solid #2196f3;
+    color: #0d47a1;
+}
+
+/* Adjacent Sibling Combinator (+) - selects element immediately after h4 */
+h4 + p {
+    background-color: #ffe0b2;
+    padding: 1rem;
+    border-left: 4px solid #ff9800;
+    color: #e65100;
+}
+
+/* General Sibling Combinator (~) - selects all siblings after h4 */
+.sibling-demo h4 ~ p {
+    background-color: #f8bbd0;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid #ec407a;
+    color: #880e4f;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
