@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 - Login Form Validation</title>
+    <link rel="stylesheet" href="question-07-login-form-validation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username (Min 5 characters):</label>
+                <input type="text" id="username" placeholder="john_doe" required>
+                <span class="error" id="usernameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password (8+ chars, 1 uppercase, 1 number, 1 special):</label>
+                <input type="password" id="password" placeholder="Pass@123" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <button type="submit">Login</button>
+            <div id="successMessage" class="success"></div>
+        </form>
+    </div>
+
+    <script src="question-07-login-form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 - Shopping Cart Total</title>
+    <link rel="stylesheet" href="question-09-shopping-cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        
+        <div class="section">
+            <h2>Items in Cart</h2>
+            <button onclick="displayCart()">Show Cart Items</button>
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <div id="cartOutput"></div>
+        </div>
+
+        <div class="section">
+            <h2>Apply Coupon Code</h2>
+            <input type="text" id="couponCode" placeholder="e.g., SAVE20, DISC10">
+            <button onclick="applyCoupon()">Apply Coupon</button>
+            <div id="couponOutput"></div>
+        </div>
+
+        <div class="section">
+            <h2>Final Total</h2>
+            <div id="finalTotal"></div>
+        </div>
+    </div>
+
+    <script src="question-09-shopping-cart.js"></script>
+</body>
+</html>
