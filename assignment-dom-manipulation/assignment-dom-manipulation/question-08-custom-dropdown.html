@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Custom Dropdown</title>
+    <link rel="stylesheet" href="question-08-custom-dropdown.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Dropdown</h1>
+        
+        <div class="dropdown" id="customDropdown">
+            <button id="dropdownBtn" class="dropdown-btn">Select an Option</button>
+            <div id="dropdownMenu" class="dropdown-menu">
+                <a href="#" class="dropdown-item" data-value="Option 1">Option 1</a>
+                <a href="#" class="dropdown-item" data-value="Option 2">Option 2</a>
+                <a href="#" class="dropdown-item" data-value="Option 3">Option 3</a>
+                <a href="#" class="dropdown-item" data-value="Option 4">Option 4</a>
+                <a href="#" class="dropdown-item" data-value="Option 5">Option 5</a>
+            </div>
+        </div>
+
+        <div class="result">
+            <p>Selected: <span id="selectedValue">None</span></p>
+        </div>
+    </div>
+
+    <script src="question-08-custom-dropdown.js"></script>
+</body>
+</html>

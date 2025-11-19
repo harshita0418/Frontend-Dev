@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Theme Switcher</title>
+    <link rel="stylesheet" href="question-04-theme-switcher.css">
+</head>
+<body data-theme="light">
+    <div class="container">
+        <h1>Theme Switcher</h1>
+        
+        <div class="theme-buttons">
+            <button class="theme-btn" data-theme="light">Light Theme</button>
+            <button class="theme-btn" data-theme="dark">Dark Theme</button>
+            <button class="theme-btn" data-theme="blue">Blue Theme</button>
+        </div>
+
+        <div class="content">
+            <h2>Current Theme: <span id="currentTheme">Light</span></h2>
+            <p>This is a sample content area to demonstrate theme switching using attribute manipulation.</p>
+            <div class="card">
+                <h3>Sample Card</h3>
+                <p>The theme changes dynamically by modifying the data-theme attribute on the body element.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="question-04-theme-switcher.js"></script>
+</body>
+</html>

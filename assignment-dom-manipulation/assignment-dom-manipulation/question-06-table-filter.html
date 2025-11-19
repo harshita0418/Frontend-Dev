@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><title>Q6 - Real-Time Table Filter</title>
+    <link rel="stylesheet" href="question-06-table-filter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Table Filter</h1>
+        
+        <input type="text" id="searchInput" placeholder="Search by name, branch, or CGPA...">
+        
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Branch</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>Computer Science</td>
+                    <td>3.8</td>
+                </tr>
+                <tr>
+                    <td>Bob Smith</td>
+                    <td>Electronics</td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>Carol White</td>
+                    <td>Computer Science</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>David Brown</td>
+                    <td>Mechanical</td>
+                    <td>3.2</td>
+                </tr>
+                <tr>
+                    <td>Eve Davis</td>
+                    <td>Electronics</td>
+                    <td>3.7</td>
+                </tr>
+                <tr>
+                    <td>Frank Miller</td>
+                    <td>Computer Science</td>
+                    <td>3.6</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="noResults" class="no-results"></div>
+    </div>
+
+    <script src="question-06-table-filter.js"></script>
+</body>
+</html>
