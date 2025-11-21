@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop Debugger</title>
+    <link rel="stylesheet" href="event-loop-debugger.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Debugging the Event Loop</h1>
+        <button id="runCode">Run Code</button>
+        <div id="output"></div>
+        <div id="explanation">
+            <h2>Explanation</h2>
+            <p><strong>Execution Order:</strong></p>
+            <ol>
+                <li>Script start (synchronous)</li>
+                <li>Script end (synchronous)</li>
+                <li>Promise callback (microtask)</li>
+                <li>Timeout callback (macrotask)</li>
+            </ol>
+            <p><strong>Why?</strong> The event loop prioritizes microtasks (Promises) over macrotasks (setTimeout). All microtasks are executed before any macrotask.</p>
+        </div>
+    </div>
+    <script src="event-loop-debugger.js"></script>
+</body>
+</html>
