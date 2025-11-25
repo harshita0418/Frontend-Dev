@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4: Multi-API Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Multi-API Dashboard</h1>
+            <p class="subtitle">Real-time statistics from multiple APIs</p>
+        </div>
+
+        <div id="warningAlert" class="warning-alert hidden">
+            ⚠️ Some data could not be loaded. Displaying partial information.
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-skeleton" id="userSkeleton">
+                    <div class="skeleton-line" style="width: 60%;"></div>
+                    <div class="skeleton-line" style="width: 40%; margin-top: 0.5rem;"></div>
+                </div>
+                <div class="stat-content hidden" id="userContent">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value" id="userCount">0</div>
+                    <div class="stat-label">Total Users</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-skeleton" id="orderSkeleton">
+                    <div class="skeleton-line" style="width: 60%;"></div>
+                    <div class="skeleton-line" style="width: 40%; margin-top: 0.5rem;"></div>
+                </div>
+                <div class="stat-content hidden" id="orderContent">
+                    <div class="stat-icon">📦</div>
+                    <div class="stat-value" id="orderCount">0</div>
+                    <div class="stat-label">Total Orders</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-skeleton" id="productSkeleton">
+                    <div class="skeleton-line" style="width: 60%;"></div>
+                    <div class="skeleton-line" style="width: 40%; margin-top: 0.5rem;"></div>
+                </div>
+                <div class="stat-content hidden" id="productContent">
+                    <div class="stat-icon">🛍️</div>
+                    <div class="stat-value" id="productCount">0</div>
+                    <div class="stat-label">Total Products</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
