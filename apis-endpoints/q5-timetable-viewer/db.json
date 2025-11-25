@@ -1,0 +1,39 @@
+{
+  "timetable": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "time": "09:00 AM - 10:30 AM",
+      "subject": "Data Structures",
+      "faculty": "Dr. Sharma"
+    },
+    {
+      "id": 2,
+      "day": "Monday",
+      "time": "10:45 AM - 12:15 PM",
+      "subject": "Web Development",
+      "faculty": "Mr. Patel"
+    },
+    {
+      "id": 3,
+      "day": "Monday",
+      "time": "01:00 PM - 02:30 PM",
+      "subject": "Database Management",
+      "faculty": "Ms. Desai"
+    },
+    {
+      "id": 4,
+      "day": "Tuesday",
+      "time": "09:00 AM - 10:30 AM",
+      "subject": "Algorithms",
+      "faculty": "Dr. Gupta"
+    },
+    {
+      "id": 5,
+      "day": "Tuesday",
+      "time": "10:45 AM - 12:15 PM",
+      "subject": "Cloud Computing",
+      "faculty": "Mr. Reddy"
+    }
+  ]
+}

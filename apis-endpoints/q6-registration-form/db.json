@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "phone": "9876543210",
+      "password": "SecurePass123!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "phone": "9876543211",
+      "password": "SecurePass456!"
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "email": "mike@example.com",
+      "phone": "9876543212",
+      "password": "SecurePass789!"
+    },
+    {
+      "id": 4,
+      "name": "Sarah Williams",
+      "email": "sarah@example.com",
+      "phone": "9876543213",
+      "password": "SecurePass321!"
+    },
+    {
+      "id": 5,
+      "name": "Tom Brown",
+      "email": "tom@example.com",
+      "phone": "9876543214",
+      "password": "SecurePass654!"
+    }
+  ]
+}
