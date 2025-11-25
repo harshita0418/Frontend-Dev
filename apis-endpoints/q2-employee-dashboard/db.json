@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "department": "Engineering",
+      "email": "john.smith@company.com",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "department": "Marketing",
+      "email": "sarah.johnson@company.com",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Mike Wilson",
+      "department": "Sales",
+      "email": "mike.wilson@company.com",
+      "status": "inactive"
+    },
+    {
+      "id": 4,
+      "name": "Emma Davis",
+      "department": "HR",
+      "email": "emma.davis@company.com",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "David Brown",
+      "department": "Engineering",
+      "email": "david.brown@company.com",
+      "status": "active"
+    }
+  ]
+}
